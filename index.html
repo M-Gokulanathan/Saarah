@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special New Year Wish</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@300;400;700&display=swap');
+
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background: radial-gradient(circle, #1f1c2c, #928dab);
+            color: #fff;
+            animation: backgroundGlow 10s ease infinite;
+            background-size: 400% 400%;
+            overflow-x: hidden;
+        }
+
+        @keyframes backgroundGlow {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 4.5rem;
+            font-family: 'Pacifico', cursive;
+            margin-bottom: 20px;
+            animation: fadeIn 2s ease-in-out;
+            text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
+        }
+
+        p {
+            font-size: 1.8rem;
+            margin-top: 20px;
+            animation: fadeIn 3s;
+            line-height: 1.6;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .highlight {
+            color: #f39c12;
+            font-weight: bold;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        .slideshow-container {
+            position: relative;
+            width: 80%;
+            max-width: 900px;
+            margin: 20px auto;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .slides {
+            display: none;
+            text-align: center;
+        }
+
+        .active {
+            display: block;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 15px;
+        }
+
+        .message-button {
+            margin-top: 30px;
+            padding: 15px 40px;
+            font-size: 1.6rem;
+            color: white;
+            background: linear-gradient(45deg, #ff416c, #ff4b2b);
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            animation: fadeIn 4s;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .message-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .message {
+            margin-top: 30px;
+            font-size: 2.2rem;
+            color: #f39c12;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+            display: none;
+            position: relative;
+            animation: messageReveal 1s ease-in-out forwards;
+        }
+
+        @keyframes messageReveal {
+            0% { opacity: 0; transform: scale(0.8); }
+            100% { opacity: 1; transform: scale(1); }
+        }
+
+        .confetti {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            overflow: hidden;
+        }
+
+        .confetti-piece {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: var(--confetti-color, #f39c12);
+            animation: confetti-fall 2.5s ease-out infinite;
+        }
+
+        @keyframes confetti-fall {
+            0% {
+                opacity: 1;
+                transform: translateY(-50%) rotate(0deg);
+            }
+            100% {
+                opacity: 0;
+                transform: translateY(150vh) rotate(360deg);
+            }
+        }
+
+       .image-reveal {
+    display: none; /* Initially hidden */
+    margin-top: 20px;
+    animation: fadeIn 2s ease-in-out forwards;
+    width: 300px; /* Adjust size if needed */
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+        /* Enable scrolling */
+        html, body {
+            height: 100%;
+        }
+
+        .content-wrapper {
+            min-height: 150vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="content-wrapper">
+        <div class="container">
+            <h1>🎉 Happy New Year 2025 🎉</h1>
+            <p>
+               🎉✨ Happy New Year, <span class="highlight">Saarah !</span> ✨🎉
+I’m so grateful to have you in my life. 💕 Thank you for all the laughter, love, and unforgettable memories we’ve shared this year. 🥰 Let’s make 2025 even more amazing together! 🌟 Wishing you endless happiness, good health, and success in everything you do. 🌈💪
+
+I friend you >> 🫶🎆
+Here’s to us and a fabulous new year! 🥂💃💖</p>
+
+            <div class="slideshow-container">
+                <div class="slides active">
+                    <img src="TS/WhatsApp Image 2024-12-31 at 02.09.01_131b1967.jpg" alt="Adventure Awaits">
+                </div>
+                <div class="slides">
+                    <img src="TS/mom5().jpg" alt="Celebrate Every Moment">
+                </div>
+                <div class="slides">
+                    <img src="TS/WhatsApp Image 2024-12-31 at 09.51.52_e205ab9a.jpg"alt="Dream Big in 2024">
+                </div>
+            </div>
+
+            <button class="message-button" id="messageButton" onclick="showMessage()">Reveal Your Special Wish</button>
+<a href="moments.html" class="message-button" style="margin-top: 20px;">Check Our Moments</a>
+
+
+            <div class="message" id="newYearMessage" onclick="revealPhoto()">
+                🌟 Wish you a happy new year my girl...❤ .!! <span class="highlight">Saarah..!!</span>however the start or end in 25 can be... May our journey be hard and soft.... Or may be ups and downs...noothing to worry about it the hope we must have is to that for you is me..for me is you..!! You are the only who saw the heart and soul 💗🥰 not the appearance....!! Don't let me alone ... Even its my mistake or your mistake ... Let both go down ... 👀 Or if one goes down another have to...💫 . Iove you more my friend... May my activities irritates you...🙃... But my soul loves you 💗 only one request from me to you is not to get anger on me..🙃 another order to you is not to leave me..😁... Friends forever ♾💞...!! Hugmemore(hmm) 🤭🫂...!! I friend you ...❤💫!!
+            </div>
+
+            <img src="TS/WhatsApp Image 2024-12-29 at 12.31.25_66fd823b.jpg"id="revealImage" class="image-reveal" alt="Surprise Image"/>
+
+            <div class="confetti" id="confetti"></div>
+        </div>
+    </div>
+
+    <script>
+        // Slideshow functionality
+        let currentIndex = 0;
+        const slides = document.querySelectorAll('.slides');
+
+        function showSlides() {
+            slides.forEach((slide, index) => {
+                slide.classList.remove('active');
+                if (index === currentIndex) {
+                    slide.classList.add('active');
+                }
+            });
+
+            currentIndex = (currentIndex + 1) % slides.length;
+            setTimeout(showSlides, 3000);
+        }
+
+        showSlides();
+
+        // New Year message display with confetti
+        function showMessage() {
+            const message = document.getElementById('newYearMessage');
+            const confetti = document.getElementById('confetti');
+            const button = document.getElementById('messageButton');
+
+            if (message.style.display === 'block') {
+                button.innerText = 'Tap More for Cheers!';
+                createConfetti(confetti);
+            } else {
+                message.style.display = 'block';
+                button.innerText = 'Tap More for Cheers!';
+                createConfetti(confetti);
+            }
+        }
+
+        // Generate confetti effect
+        function createConfetti(container) {
+            for (let i = 0; i < 120; i++) {
+                const confettiPiece = document.createElement('div');
+                confettiPiece.classList.add('confetti-piece');
+                confettiPiece.style.setProperty('--confetti-color', getRandomColor());
+                confettiPiece.style.left = Math.random() * 100 + '%';
+                confettiPiece.style.animationDelay = Math.random() * 2 + 's';
+                container.appendChild(confettiPiece);
+
+                setTimeout(() => confettiPiece.remove(), 3000);
+            }
+
+            function getRandomColor() {
+                const colors = ['#f39c12', '#ff416c', '#ff4b2b', '#e67e22', '#8e44ad'];
+                return colors[Math.floor(Math.random() * colors.length)];
+            }
+        }
+
+        // Reveal a surprise photo
+     function revealPhoto() {
+    const image = document.getElementById('revealImage');
+    if (image) {
+        image.style.display = 'block'; // Make the image visible
+    } else {
+        console.error("Image with ID 'revealImage' not found.");
+    }
+}
+
+    </script>
+</body>
+</html>
